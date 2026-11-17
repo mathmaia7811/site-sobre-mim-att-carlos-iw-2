@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b13;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #11111d;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #743bff;
+        }
+
+        header h1 {
+            color: #a987ff;
+            font-size: 32px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a987ff;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        h2 {
+            color: #a987ff;
+            font-size: 27px;
+            margin-bottom: 20px;
+            border-left: 4px solid #743bff;
+            padding-left: 12px;
+        }
+
+        p {
+            color: #ccccd8;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .destaque {
+            color: #a987ff;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #171725;
+            border: 1px solid #292940;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #8b5cff;
+            box-shadow: 0 5px 20px #743bff30;
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+            background: #242438;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 7px;
+        }
+
+        .card a {
+            color: #8eb5ff;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+            color: #b99cff;
+        }
+
+        .gta-card {
+            max-width: 400px;
+        }
+
+        .gta-card img {
+            height: auto;
+            object-fit: contain;
+        }
+
+        footer {
+            background: #11111d;
+            text-align: center;
+            padding: 25px;
+            border-top: 2px solid #743bff;
+            color: #9999aa;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sobre Mim</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#favoritos">Favoritos</a>
+            <a href="#objetivos">Objetivos</a>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bem-vindo ao meu site!</h2>
+
+        <p>
+            Olá! Este é um pequeno site sobre mim, minha personalidade,
+            meus gostos, meus hobbies e meus objetivos para o futuro.
+        </p>
+
+        <p>
+            Aqui você vai conhecer um pouco mais sobre quem eu sou
+            e as coisas que fazem parte da minha vida.
+        </p>
+    </section>
+
+    <section id="sobre">
+        <h2>Quem sou eu?</h2>
+
+        <p>
+            Sou uma pessoa engraçada, um pouco tímida e brincalhona.
+            Gosto de me divertir, mas também sou focado nos meus objetivos.
+            Quando quero alguma coisa, consigo ser bastante estudioso e dedicado.
+        </p>
+
+        <p>
+            Uma das coisas que mais fazem parte da minha personalidade é a música.
+            Escuto muitos artistas diferentes e gosto de conhecer novos estilos
+            e álbuns.
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Meus hobbies e interesses</h2>
+
+        <p>
+            No meu tempo livre, gosto de ouvir música, jogar videogame,
+            tocar instrumentos e aprender coisas novas.
+        </p>
+
+        <p>
+            Também gosto de tocar <span class="destaque">violão e piano</span>,
+            produzir músicas utilizando o FL Studio e estudar inglês diariamente.
+            Além disso, gosto de assistir filmes e séries em inglês para melhorar
+            meu vocabulário e minha compreensão.
+        </p>
+    </section>
+
+    <section id="favoritos">
+        <h2>Meus favoritos</h2>
+
+        <h3>Artistas que eu gosto</h3>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://www.theguardian.com/music/2019/jul/04/juice-wrld-there-is-just-so-much-trash-in-rap"
+                     alt="Juice WRLD">
+                <div class="card-content">
+                    <h3>Juice WRLD</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Juice_Wrld" target="_blank">Conhecer artista</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trippie_Redd_2018.png"
+                     alt="Trippie Redd">
+                <div class="card-content">
+                    <h3>Trippie Redd</h3>
+                    <a href="https://en.wikipedia.org/wiki/Trippie_Redd" target="_blank">Conhecer artista</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%24AP_Rocky_at_the_2025_Cannes_Film_Festival_(cropped_3x4).jpg"
+                     alt="A$AP Rocky">
+                <div class="card-content">
+                    <h3>A$AP Rocky</h3>
+                    <a href="https://pt.wikipedia.org/wiki/A$AP_Rocky" target="_blank">Conhecer artista</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyler_the_Creator_2022_cropped.png"
+                     alt="Tyler, the Creator">
+                <div class="card-content">
+                    <h3>Tyler, the Creator</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Tyler,_the_Creator" target="_blank">Conhecer artista</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lil_Uzi_Vert_(2018).png"
+                     alt="Lil Uzi Vert">
+                <div class="card-content">
+                    <h3>Lil Uzi Vert</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Lil_Uzi_Vert" target="_blank">Conhecer artista</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px;">Meu jogo favorito</h3>
+
+        <div class="cards">
+            <div class="card gta-card">
+                <img src="https://www.gtabase.com/igallery/501-600/GTA_V_Official_Cover_Art-524-1920.jpg"
+                     alt="Capa oficial de GTA V">
+                <div class="card-content">
+                    <h3>Grand Theft Auto V</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto_V" target="_blank">Conhecer jogo</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">Meus filmes favoritos</h3>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scarface_1983_Logo.png"
+                     alt="Scarface">
+                <div class="card-content">
+                    <h3>Scarface</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Scarface_(1983)" target="_blank">Conhecer filme</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Principal_cast_of_Fight_Club.jpg"
+                     alt="Elenco de Clube da Luta">
+                <div class="card-content">
+                    <h3>Clube da Luta</h3>
+                    <a href="https://pt.wikipedia.org/wiki/Fight_Club" target="_blank">Conhecer filme</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 style="margin-top: 40px;">Minhas séries favoritas</h3>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Boondocks_Logo.svg"
+                     alt="The Boondocks">
+                <div class="card-content">
+                    <h3>The Boondocks</h3>
+                    <a href="https://en.wikipedia.org/wiki/The_Boondocks_(TV_series)" target="_blank">Conhecer série</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/South_Park_logo.png"
+                     alt="South Park">
+                <div class="card-content">
+                    <h3>South Park</h3>
+                    <a href="https://pt.wikipedia.org/wiki/South_Park" target="_blank">Conhecer série</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="objetivos">
+        <h2>Meus sonhos e objetivos</h2>
+
+        <p>
+            Um dos meus maiores sonhos é morar fora do Brasil,
+            principalmente no Canadá ou nos Estados Unidos.
+        </p>
+
+        <p>
+            Também quero construir uma família, ter uma vida confortável
+            e alcançar muito sucesso profissional e financeiro.
+            Um dos meus grandes objetivos é me tornar bilionário.
+        </p>
+
+        <p>
+            Sei que ainda tenho muito a aprender e conquistar,
+            mas quero continuar estudando e trabalhando para chegar
+            onde desejo.
+        </p>
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por mim — 2026</p>
+    </footer>
+
+</body>
+</html>
